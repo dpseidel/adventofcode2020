@@ -28,7 +28,9 @@ expect_equal(sled_password(test1)$is_legal, c(T, F, T))
 
 input <- read_lines("puzzle2_input.txt")
 
-sled_password(input) %>% c()
+sled_password(input) %>%   
+  pull(is_legal) %>%
+  sum()
 
 ## Part2
 toboggan_password <- function(input) {
