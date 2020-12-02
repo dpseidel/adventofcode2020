@@ -1,7 +1,6 @@
 library(tidyverse)
 library(testthat)
 
-
 ### Part 1
 test1 <- c(
   "1-3 a: abcde",
@@ -28,7 +27,7 @@ expect_equal(sled_password(test1)$is_legal, c(T, F, T))
 
 input <- read_lines("puzzle2_input.txt")
 
-sled_password(input) %>%   
+sled_password(input) %>%
   pull(is_legal) %>%
   sum()
 
