@@ -88,7 +88,7 @@ map_dbl(slopes, ~ tobogganing(input, start, .x)$tree %>% sum())
 # each turn... because i'm not filtering down my pattern rows to those applicable...
 # must add logic.
 
-toboggoning_full_throttle <- function(array, start, slope) {
+tobogganing_full_throttle <- function(array, start, slope) {
   
   pattern_length <- str_count(array[1], ".|#")
   x = seq(start[1], to = length(array), by = slope[1])
@@ -107,9 +107,9 @@ toboggoning_full_throttle <- function(array, start, slope) {
 
 
 # with proof
-map(slopes, ~ tobaggoning_full_throttle(test, start, .x))
-map_dbl(slopes, ~ tobaggoning_full_throttle(test, start, .x)$tree %>% sum()) %>% prod()
+map(slopes, ~ tobogganing_full_throttle(test, start, .x))
+map_dbl(slopes, ~ tobogganing_full_throttle(test, start, .x)$tree %>% sum()) %>% prod()
 ## works!
 
 # with inputs
-map_dbl(slopes, ~ tobaggoning_full_throttle(input, start, .x)$tree %>% sum()) %>% prod()
+map_dbl(slopes, ~ tobogganing_full_throttle(input, start, .x)$tree %>% sum()) %>% prod()
