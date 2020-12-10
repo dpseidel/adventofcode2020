@@ -25,7 +25,7 @@ sled_password <- function(input) {
 sled_password(test1)
 expect_equal(sled_password(test1)$is_legal, c(T, F, T))
 
-input <- read_lines("puzzle2_input.txt")
+input <- read_lines("input_files/puzzle2_input.txt")
 
 sled_password(input) %>%
   pull(is_legal) %>%

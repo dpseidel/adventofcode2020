@@ -62,7 +62,7 @@ tobogganing <- function(array, start, slope) {
 tobogganing(test, start, slope)$tree %>% sum()
 
 ##
-input <- read_lines("puzzle3_input.txt")
+input <- read_lines("input_files/puzzle3_input.txt")
 tobogganing(input, start, slope)$tree %>% sum()
 
 ## part 2

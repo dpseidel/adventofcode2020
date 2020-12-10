@@ -29,7 +29,7 @@ map_dbl(parsed, ~str_split(.x, "")[[1]] %>% unique %>% length) %>% sum() == 11
 
 ### input! 
 
-input <- read_lines('puzzle6_input.txt')
+input <- read_lines('input_files/puzzle6_input.txt')
 parsed_input <- input %>%
   na_if("") %>%
   replace_na("/n") %>%

@@ -13,7 +13,7 @@ parse_expense_report <- function(vector, m = 2) {
 expect_equal(parse_expense_report(test1), 514579)
 
 ## puzzle part 1
-input <- read_table("puzzle1_input.txt", col_names = "v1")
+input <- read_table("input_files/puzzle1_input.txt", col_names = "v1")
 parse_expense_report(input$v1)
 
 ## puzzle part 2

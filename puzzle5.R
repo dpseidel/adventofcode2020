@@ -57,7 +57,7 @@ expect_equal(get_seat("FFFBBBFRRR")$seat, 119)
 expect_equal(get_seat("BBFFBBFRLL")$seat, 820)
 
 ### input! 
-input <- read_lines("puzzle5_input.txt")
+input <- read_lines("input_files/puzzle5_input.txt")
 seats <- map_df(input, get_seat)
 max(seats)
 

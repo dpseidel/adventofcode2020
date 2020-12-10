@@ -24,7 +24,7 @@ what_contain_shiny_gold <- str_extract(
 
 
 ### puzzle input 
-p7 <- read_lines("puzzle7_input.txt")
+p7 <- read_lines("input_files/puzzle7_input.txt")
 
 p7[str_detect(p7, "shiny gold bag")]
 

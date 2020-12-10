@@ -36,7 +36,7 @@ testthat::expect_equal(map_lgl(
 
 
 ### input!
-input <- read_lines("puzzle4_input.txt") %>%
+input <- read_lines("input_files/puzzle4_input.txt") %>%
   na_if("") %>%
   replace_na("/n") %>%
   paste(collapse = " ") %>%
